@@ -1,0 +1,39 @@
+{
+  "rows_before_cleaning": 142524,
+  "columns": [
+    "film_code",
+    "cinema_code",
+    "total_sales",
+    "tickets_sold",
+    "tickets_out",
+    "show_time",
+    "occu_perc",
+    "ticket_price",
+    "ticket_use",
+    "capacity",
+    "date",
+    "month",
+    "quarter",
+    "day"
+  ],
+  "duplicates_removed": 106,
+  "invalid_capacity_le_0_removed": 54,
+  "invalid_ticket_use_lt_0_removed": 61,
+  "invalid_rows_removed_total": 115,
+  "rows_after_invalid_removal": 142303,
+  "occu_perc_over_100_kept": 164,
+  "missing_capacity_before": 123,
+  "missing_capacity_imputed_per_cinema_median": 91,
+  "missing_capacity_dropped_no_reference": 32,
+  "missing_capacity_dropped_cinema_codes": [
+    543,
+    557,
+    637
+  ],
+  "missing_capacity_after": 0,
+  "rows_after_cleaning": 142271,
+  "total_rows_removed": 253,
+  "remaining_nulls": {
+    "occu_perc": 91
+  }
+}

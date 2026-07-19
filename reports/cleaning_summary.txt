@@ -1,0 +1,24 @@
+============================================================
+DATA CLEANING SUMMARY
+============================================================
+Rows before cleaning:              142524
+Duplicate rows removed:             106
+
+Invalid (physically impossible) rows removed:
+  capacity <= 0:                     54
+  ticket_use < 0:                    61
+  total removed (union, dedup'd):    115
+  occu_perc > 100% rows KEPT:        164 (excluded from modeling only, not dropped)
+
+Missing capacity handling:
+  Missing before:                    123
+  Imputed via per-cinema median:     91
+  Dropped (no reference available):  32
+    cinema_codes with no reference:  [543, 557, 637]
+  Missing after:                     0
+
+Rows after cleaning:                142271
+Total rows removed:                 253 (0.18%)
+
+WARNING - remaining nulls: {'occu_perc': 91}
+============================================================
